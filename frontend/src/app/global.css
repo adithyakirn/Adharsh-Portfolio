@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", monospace;
+}
+
+:root {
+  --text-color: #00ff00;
+  --background: #1e1e1e;
+}
+
+.text-terminal {
+  color: var(--text-color);
+}
+.background {
+  background-color: var(--background);
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
