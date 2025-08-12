@@ -15,7 +15,7 @@ export const Main = () => {
   return (
     <div className="flex-1 min-h-0 overflow-hidden w-screen">
       <div ref={scrollRef} className="h-full overflow-y-auto pb-5">
-        <div className="text-[#61dafb] leading-[1.1] whitespace-pre text-[13px] mb-[5px] text-wrap">
+        <div className="text-[#61dafb] leading-[1.1] whitespace-pre text-[11px] sm:text-[13px] mb-[5px] text-wrap">
           <pre>
             {`┌───────────────────────────────────────────────┐
 │                                               │
@@ -35,7 +35,7 @@ export const Main = () => {
         <div className="text-[#cccccc] ml-0 mb-[5px] break-words">{`Type 'help' to see available commands`}</div>
         <span
           ref={measureRef}
-          className="relative flex-col whitespace-pre text-white ml-[5px] w-[80%] flex"
+          className="relative sm:text-[13px] text-[10px] flex-col whitespace-pre text-white ml-[5px] w-[90%] flex"
           style={{ textWrap: "balance" }}
         >
           {value}
