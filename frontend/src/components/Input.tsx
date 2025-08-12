@@ -1,6 +1,6 @@
 "use client";
 import { InputContextType, useInputContext } from "@/Context/inputContext";
-import React, { ReactNode, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { about, contact, help } from "./Codes";
 
 export const Input = () => {
@@ -61,8 +61,7 @@ export const Input = () => {
             } else {
               output = `command not found, Try Typing help`;
             }
-            // eslint-disable-next-line
-            setValue((prev: React.ReactNode) => {
+            setValue((prev) => {
               return (
                 <>
                   {prev}

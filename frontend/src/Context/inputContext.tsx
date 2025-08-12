@@ -8,8 +8,8 @@ import React, {
 } from "react";
 
 export type InputContextType = {
-  value: string;
-  setValue: React.Dispatch<React.SetStateAction<string>>;
+  value: React.ReactNode;
+  setValue: React.Dispatch<React.SetStateAction<React.ReactNode>>;
   cursorRef: React.RefObject<HTMLSpanElement | null>;
   measureRef: React.RefObject<HTMLSpanElement | null>;
 };
@@ -22,7 +22,7 @@ type InputContextProviderProps = {
 export const InputContextProvider = ({
   children,
 }: InputContextProviderProps) => {
-  const [value, setValue] = useState<string>("");
+const [value, setValue] = useState<React.ReactNode>("");
   const cursorRef = useRef<HTMLSpanElement>(null);
   const measureRef = useRef<HTMLSpanElement>(null);
 
