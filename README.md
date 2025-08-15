@@ -16,7 +16,7 @@ A terminal-themed personal portfolio built using Next.js and Tailwind CSS, desig
 
 ## Getting Started
 
-Clone the repo:
+Clone the website:
 
 ```bash
 git clone git@github.com:adithyakirn/Adharsh-Portfolio.git
